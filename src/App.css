@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+/*
+ * Utilities
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (min-width: 360px) {
+  .container { max-width: 90%; }
+}
+@media (min-width: 830px) {
+  .container { max-width: 90%; }
+}
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
+nav {
+  background-color: #292929;
+  height: 140px;
+}
+nav .container {
+  height: 100%; 
+  display: flex;
+  align-items: center;
+}
+nav .logo {
+  padding: 0.75rem 1rem;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 160px;
+}
+@media (max-width: 320px) {
+  nav .logo img {
+    width: 88px;
+  }
+}
+.hero {
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  padding: 8rem 0;
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 72px;
+  max-width: 490px;
+  line-height: 94px;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+}
+@media (max-width: 830px) {
+  .hero {
+    margin: 0 auto;
+  }
+  .hero h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.movies {
+  padding: 3rem 1rem;
+}
+.movies h2 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  margin: 3rem 0 0.5rem;
+}
+label {
+  font-size: 24px;
+  line-height: 32px;
+}
+input {
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  padding: 1rem 0;
+}
+.movies-wrap {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.movie {
+  background-color: black;
+  flex: 0 0 300px;
+  height: 300px;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.movie-title {
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+}
+.movie + .movie {
+  margin-left: 1rem;
+}
+@media (max-width: 320px) {
+  label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .movies h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .movie-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .movie {
+    background-color: #292929;
+    flex: 0 0 200px;
+    height: 200px;
+  }
+}
